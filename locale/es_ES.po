@@ -1,0 +1,223 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:sale.goal,account:"
+msgid "Account"
+msgstr "Cuenta"
+
+msgctxt "field:sale.goal,amount:"
+msgid "Amount"
+msgstr "Importe"
+
+msgctxt "field:sale.goal,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:sale.goal,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:sale.goal,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:sale.goal,currency_digits:"
+msgid "Currency Digits"
+msgstr "Decimals de la moneda"
+
+msgctxt "field:sale.goal,distribution:"
+msgid "Distribution"
+msgstr "Distribución"
+
+msgctxt "field:sale.goal,employee:"
+msgid "Salesman"
+msgstr "Vendedor"
+
+msgctxt "field:sale.goal,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:sale.goal,lines:"
+msgid "Lines"
+msgstr "Líneas"
+
+msgctxt "field:sale.goal,party:"
+msgid "Party"
+msgstr "Tercero"
+
+msgctxt "field:sale.goal,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.goal,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:sale.goal,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:sale.goal.detail,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:sale.goal.detail,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:sale.goal.detail,currency_digits:"
+msgid "Currency Digits"
+msgstr "Decimals de la moneda"
+
+msgctxt "field:sale.goal.detail,goal:"
+msgid "Goal"
+msgstr "Objetivo"
+
+msgctxt "field:sale.goal.detail,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:sale.goal.detail,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.goal.detail,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.goal.detail,value:"
+msgid "Amount"
+msgstr "Importe"
+
+msgctxt "field:sale.goal.detail,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:sale.goal.detail,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:sale.goal.distribution,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:sale.goal.distribution,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:sale.goal.distribution,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:sale.goal.distribution,lines:"
+msgid "Lines"
+msgstr "Líneas"
+
+msgctxt "field:sale.goal.distribution,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.goal.distribution,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.goal.distribution,total:"
+msgid "Total"
+msgstr "Total"
+
+msgctxt "field:sale.goal.distribution,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:sale.goal.distribution,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:sale.goal.distribution.detail,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:sale.goal.distribution.detail,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:sale.goal.distribution.detail,distribution:"
+msgid "Goal"
+msgstr "Objetivo"
+
+msgctxt "field:sale.goal.distribution.detail,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:sale.goal.distribution.detail,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.goal.distribution.detail,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:sale.goal.distribution.detail,value:"
+msgid "Total"
+msgstr "Total"
+
+msgctxt "field:sale.goal.distribution.detail,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:sale.goal.distribution.detail,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "model:ir.action,name:act_goal_party_form"
+msgid "Sale Goals"
+msgstr "Objetivos de ventas"
+
+msgctxt "model:ir.action,name:act_sale_goal"
+msgid "Goals"
+msgstr "Objetivos"
+
+msgctxt "model:ir.action,name:act_sale_goal_distribution"
+msgid "Goal distribution"
+msgstr "Distribución objetivo"
+
+msgctxt "model:ir.ui.menu,name:menu_sale_goal"
+msgid "Goals"
+msgstr "Objetivos"
+
+msgctxt "model:ir.ui.menu,name:menu_sale_goal_distribution"
+msgid "Goal distribution"
+msgstr "Distribución objetivo"
+
+msgctxt "model:sale.goal,name:"
+msgid "Goal"
+msgstr "Objetivo"
+
+msgctxt "model:sale.goal.detail,name:"
+msgid "Goal Detail"
+msgstr "Detalle objetivo"
+
+msgctxt "model:sale.goal.distribution,name:"
+msgid "Goal Distribution"
+msgstr "Distribución objetivo"
+
+msgctxt "model:sale.goal.distribution.detail,name:"
+msgid "Goal Distribution Line"
+msgstr "Línea distribución objetivo"
+
+msgctxt "view:sale.goal.detail:"
+msgid "Goal Detail"
+msgstr "Detalle objetivo"
+
+msgctxt "view:sale.goal.distribution.detail:"
+msgid "Goal Distribution Line"
+msgstr "Línea distribución objetivo"
+
+msgctxt "view:sale.goal.distribution:"
+msgid "Goal Distribution"
+msgstr "Distribución objetivo"
+
+msgctxt "view:sale.goal:"
+msgid "Goal"
+msgstr "Objetivo"

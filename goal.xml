@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+     copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.ui.view" id="sale_goal_view_form">
+            <field name="model">sale.goal</field>
+            <field name="type">form</field>
+            <field name="name">goal_form</field>
+        </record>
+        <record model="ir.ui.view" id="sale_goal_view_list">
+            <field name="model">sale.goal</field>
+            <field name="type">tree</field>
+            <field name="name">goal_list</field>
+        </record>
+        <record model="ir.action.act_window" id="act_sale_goal">
+            <field name="name">Goals</field>
+            <field name="res_model">sale.goal</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_sale_goal_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="sale_goal_view_list"/>
+            <field name="act_window" ref="act_sale_goal"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_sale_goal_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="sale_goal_view_form"/>
+            <field name="act_window" ref="act_sale_goal"/>
+        </record>
+        <record model="ir.model.access" id="access_sale_goal_admin">
+            <field name="model" search="[('model', '=', 'sale.goal')]"/>
+            <field name="group" ref="sale.group_sale"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <record model="ir.ui.view" id="sale_goal_detail_view_form">
+            <field name="model">sale.goal.detail</field>
+            <field name="type">form</field>
+            <field name="name">goal_detail_form</field>
+        </record>
+        <record model="ir.ui.view" id="sale_goal_detail_view_list">
+            <field name="model">sale.goal.detail</field>
+            <field name="type">tree</field>
+            <field name="name">goal_detail_list</field>
+        </record>
+        <record model="ir.ui.view" id="sale_goal_distribution_view_form">
+            <field name="model">sale.goal.distribution</field>
+            <field name="type">form</field>
+            <field name="name">distribution_form</field>
+        </record>
+        <record model="ir.ui.view" id="sale_goal_distribution_view_list">
+            <field name="model">sale.goal.distribution</field>
+            <field name="type">tree</field>
+            <field name="name">distribution_list</field>
+        </record>
+        <record model="ir.action.act_window" id="act_sale_goal_distribution">
+            <field name="name">Goal distribution</field>
+            <field name="res_model">sale.goal.distribution</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_sale_goal_distribution_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="sale_goal_distribution_view_list"/>
+            <field name="act_window" ref="act_sale_goal_distribution"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_sale_goal_distribution_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="sale_goal_distribution_view_form"/>
+            <field name="act_window" ref="act_sale_goal_distribution"/>
+        </record>
+        <record model="ir.model.access" id="access_sale_goal_distribution_admin">
+            <field name="model" search="[('model', '=', 'sale.goal.distribution')]"/>
+            <field name="group" ref="sale.group_sale"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+          <record model="ir.rule.group" id="rule_group_sale_goal">
+            <field name="model" search="[('model', '=', 'sale.goal')]"/>
+            <field name="global_p" eval="True"/>
+          </record>
+
+          <record model="ir.rule" id="rule_sale_goal1">
+            <field name="domain">[('company', '=', user.company.id if user.company else None)]</field>
+            <field name="rule_group" ref="rule_group_sale_goal"/>
+          </record>
+
+        <record model="ir.ui.view" id="sale_goal_distribution_detail_view_form">
+            <field name="model">sale.goal.distribution.detail</field>
+            <field name="type">form</field>
+            <field name="name">distribution_detail_form</field>
+        </record>
+        <record model="ir.ui.view" id="sale_goal_distribution_detail_view_list">
+            <field name="model">sale.goal.distribution.detail</field>
+            <field name="type">tree</field>
+            <field name="name">distribution_detail_list</field>
+        </record>
+        <record model="ir.action.act_window" id="act_goal_party_form">
+            <field name="name">Sale Goals</field>
+            <field name="res_model">sale.goal</field>
+            <field name="domain">[('party', 'in', Eval('active_ids'))]</field>
+        </record>
+        <record model="ir.action.keyword"
+                id="act_open_goal_party_keyword1">
+            <field name="keyword">form_relate</field>
+            <field name="model">party.party,-1</field>
+            <field name="action" ref="act_goal_party_form"/>
+        </record>
+
+        <!-- Menus -->
+
+        <menuitem action="act_sale_goal" id="menu_sale_goal"
+            parent="sale.menu_sale" sequence="1"/>
+
+          <menuitem action="act_sale_goal_distribution"
+              id="menu_sale_goal_distribution" parent="sale.menu_configuration"
+              sequence="1" name="Goal distribution"/>
+
+          <record model="ir.ui.menu-res.group"
+              id="menu_sale_goal_distribution_group_sale_issue_admin">
+            <field name="menu" ref="menu_sale_goal_distribution"/>
+            <field name="group" ref="sale.group_sale_admin"/>
+          </record>
+
+    </data>
+</tryton>
